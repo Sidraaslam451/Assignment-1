@@ -1,114 +1,821 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOKO'S KITCHEN</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- first div -->
-
-    <div class="banner">
-        <img src="favicon_files/1317260-200.png">
-        
-        <div>
-            <h1>yoko's KITCHEN</h1>
-            <p>japanese cooking classes</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoko's Kitchen — Japanese Cooking Classes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO BANNER -->
+    <header class="banner" id="home">
+      <div class="banner-bg">
+        <svg
+          class="sakura-deco"
+          viewBox="0 0 500 300"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.18">
+            <path
+              d="M20 280 Q120 200 200 120 Q260 60 320 40"
+              stroke="#fff"
+              stroke-width="2.5"
+              fill="none"
+            />
+            <path
+              d="M200 120 Q230 90 250 70"
+              stroke="#fff"
+              stroke-width="1.5"
+              fill="none"
+            />
+            <path
+              d="M260 90 Q290 75 310 60"
+              stroke="#fff"
+              stroke-width="1.5"
+              fill="none"
+            />
+            <g transform="translate(250,70)">
+              <circle cx="0" cy="-8" r="5" fill="#ffb7c5" />
+              <circle cx="7" cy="-3" r="5" fill="#ffb7c5" />
+              <circle cx="5" cy="5" r="5" fill="#ffb7c5" />
+              <circle cx="-5" cy="5" r="5" fill="#ffb7c5" />
+              <circle cx="-7" cy="-3" r="5" fill="#ffb7c5" />
+              <circle cx="0" cy="0" r="4" fill="#ff8fab" />
+            </g>
+            <g transform="translate(310,60)">
+              <circle cx="0" cy="-7" r="4.5" fill="#ffb7c5" />
+              <circle cx="6" cy="-2" r="4.5" fill="#ffb7c5" />
+              <circle cx="4" cy="5" r="4.5" fill="#ffb7c5" />
+              <circle cx="-4" cy="5" r="4.5" fill="#ffb7c5" />
+              <circle cx="-6" cy="-2" r="4.5" fill="#ffb7c5" />
+              <circle cx="0" cy="0" r="3.5" fill="#ff8fab" />
+            </g>
+            <g transform="translate(200,120)">
+              <circle cx="0" cy="-7" r="4" fill="#ffb7c5" />
+              <circle cx="6" cy="-2" r="4" fill="#ffb7c5" />
+              <circle cx="4" cy="5" r="4" fill="#ffb7c5" />
+              <circle cx="-4" cy="5" r="4" fill="#ffb7c5" />
+              <circle cx="-6" cy="-2" r="4" fill="#ffb7c5" />
+              <circle cx="0" cy="0" r="3" fill="#ff8fab" />
+            </g>
+            <ellipse
+              cx="350"
+              cy="100"
+              rx="4"
+              ry="7"
+              fill="#ffb7c5"
+              transform="rotate(-30 350 100)"
+            />
+            <ellipse
+              cx="400"
+              cy="160"
+              rx="3"
+              ry="6"
+              fill="#ffb7c5"
+              transform="rotate(20 400 160)"
+            />
+            <ellipse
+              cx="440"
+              cy="80"
+              rx="3.5"
+              ry="6"
+              fill="#ffb7c5"
+              transform="rotate(-50 440 80)"
+            />
+            <ellipse
+              cx="470"
+              cy="200"
+              rx="3"
+              ry="5"
+              fill="#ffb7c5"
+              transform="rotate(15 470 200)"
+            />
+            <ellipse
+              cx="60"
+              cy="150"
+              rx="3"
+              ry="5.5"
+              fill="#ffb7c5"
+              transform="rotate(40 60 150)"
+            />
+            <ellipse
+              cx="100"
+              cy="80"
+              rx="3"
+              ry="5"
+              fill="#ffb7c5"
+              transform="rotate(-20 100 80)"
+            />
+          </g>
+        </svg>
+        <svg
+          class="wave"
+          viewBox="0 0 1440 60"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"
+            fill="#f7f0eb"
+          />
+        </svg>
+      </div>
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg
+            viewBox="0 0 80 80"
+            xmlns="http://www.w3.org/2000/svg"
+            width="72"
+            height="72"
+          >
+            <ellipse
+              cx="40"
+              cy="48"
+              rx="32"
+              ry="16"
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+            />
+            <path
+              d="M8 48 Q8 72 40 72 Q72 72 72 48"
+              fill="rgba(255,255,255,0.12)"
+              stroke="white"
+              stroke-width="2.5"
+            />
+            <path
+              d="M22 36 Q28 20 40 18 Q52 20 58 36"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <line
+              x1="30"
+              y1="10"
+              x2="36"
+              y2="34"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="38"
+              y1="8"
+              x2="42"
+              y2="34"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M34 14 Q36 10 34 6"
+              stroke="rgba(255,255,255,0.6)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+            <path
+              d="M40 12 Q42 8 40 4"
+              stroke="rgba(255,255,255,0.6)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
+        <div class="brand-text">
+          <h1>Yoko's Kitchen</h1>
+          <p>Authentic Japanese Cooking Classes · London</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav" id="navbar">
+      <div class="nav-inner">
+        <a class="active" href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#catering">Catering</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- INTRO STRIP -->
+    <div class="intro-strip">
+      <div class="intro-inner">
+        <div class="intro-item">
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v4l3 3" />
+          </svg>
+          <span>Flexible Schedules</span>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-item">
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <span>Small Groups</span>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-item">
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+            />
+          </svg>
+          <span>Certified Instructor</span>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-item">
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Central London</span>
+        </div>
+      </div>
     </div>
-          
-    <!-- second div -->
 
-    <div class="nav">
-        <a class="blk" href="home">home</a>
-        <a href="classes">classes</a>
-        <a href="catering">catering</a>
-        <a href="about">about</a>
-        <a href="contact">contact</a>  
-    </div> 
+    <!-- MAIN CONTENT -->
+    <main class="main-wrapper" id="classes">
+      <!-- CARD 1: Vegetarian -->
+      <article class="course-card reveal">
+        <div class="card-image">
+          <img
+            src="bokchoi.jpeg"
+            alt="Bok Choi"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="img-fallback veg-fallback">
+            <svg
+              viewBox="0 0 200 220"
+              xmlns="http://www.w3.org/2000/svg"
+              width="140"
+            >
+              <g transform="translate(100,110)">
+                <ellipse
+                  cx="0"
+                  cy="60"
+                  rx="15"
+                  ry="35"
+                  fill="#f5f0e8"
+                  stroke="#d4c5a9"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="-18"
+                  cy="55"
+                  rx="13"
+                  ry="30"
+                  fill="#f0ebe0"
+                  stroke="#d4c5a9"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="18"
+                  cy="55"
+                  rx="13"
+                  ry="30"
+                  fill="#f0ebe0"
+                  stroke="#d4c5a9"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="0"
+                  cy="-10"
+                  rx="22"
+                  ry="55"
+                  fill="#4a9b5c"
+                  stroke="#3a7a48"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="-28"
+                  cy="-5"
+                  rx="18"
+                  ry="48"
+                  fill="#5aab6c"
+                  stroke="#3a7a48"
+                  stroke-width="1.5"
+                  transform="rotate(-15 -28 -5)"
+                />
+                <ellipse
+                  cx="28"
+                  cy="-5"
+                  rx="18"
+                  ry="48"
+                  fill="#5aab6c"
+                  stroke="#3a7a48"
+                  stroke-width="1.5"
+                  transform="rotate(15 28 -5)"
+                />
+                <ellipse
+                  cx="-50"
+                  cy="10"
+                  rx="14"
+                  ry="38"
+                  fill="#6ab87c"
+                  stroke="#3a7a48"
+                  stroke-width="1"
+                  transform="rotate(-30 -50 10)"
+                />
+                <ellipse
+                  cx="50"
+                  cy="10"
+                  rx="14"
+                  ry="38"
+                  fill="#6ab87c"
+                  stroke="#3a7a48"
+                  stroke-width="1"
+                  transform="rotate(30 50 10)"
+                />
+                <line
+                  x1="0"
+                  y1="-60"
+                  x2="0"
+                  y2="30"
+                  stroke="#3a7a48"
+                  stroke-width="1"
+                  opacity="0.5"
+                />
+                <line
+                  x1="-28"
+                  y1="-50"
+                  x2="-28"
+                  y2="35"
+                  stroke="#3a7a48"
+                  stroke-width="0.8"
+                  opacity="0.4"
+                  transform="rotate(-15 -28 -5)"
+                />
+                <line
+                  x1="28"
+                  y1="-50"
+                  x2="28"
+                  y2="35"
+                  stroke="#3a7a48"
+                  stroke-width="0.8"
+                  opacity="0.4"
+                  transform="rotate(15 28 -5)"
+                />
+              </g>
+            </svg>
+            <span>Bok Choi</span>
+          </div>
+          <div class="card-tag">5-Week Course</div>
+          <div class="card-price">£185</div>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-eyebrow">Cooking Class</p>
+            <h2>Japanese Vegetarian</h2>
+            <p class="card-subtitle">Five week course in London</p>
+            <p class="card-desc">
+              A five week introduction to traditional Japanese vegetarian meals,
+              teaching you a selection of rice and noodle dishes with authentic
+              techniques passed down through generations.
+            </p>
+            <div class="card-tags">
+              <span>Rice Dishes</span>
+              <span>Noodles</span>
+              <span>Vegetarian</span>
+              <span>Beginners Welcome</span>
+            </div>
+            <a href="#contact" class="card-btn">Book This Class</a>
+          </div>
+          <aside class="card-sidebar">
+            <h3>Popular Recipes</h3>
+            <ul>
+              <li>
+                <svg viewBox="0 0 20 20" width="14" fill="#9b4444">
+                  <path
+                    d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8z"
+                  />
+                </svg>
+                Yakitori (Grilled Skewers)
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" width="14" fill="#9b4444">
+                  <path
+                    d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8z"
+                  />
+                </svg>
+                Tsukune (Chicken Patties)
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" width="14" fill="#9b4444">
+                  <path
+                    d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8z"
+                  />
+                </svg>
+                Okonomiyaki (Pancakes)
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" width="14" fill="#9b4444">
+                  <path
+                    d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8z"
+                  />
+                </svg>
+                Mizutaki (Chicken Stew)
+              </li>
+            </ul>
+            <div class="sidebar-schedule">
+              <p><strong>Next Start:</strong> 14 July 2025</p>
+              <p><strong>Day:</strong> Tuesdays 6–9pm</p>
+              <p><strong>Spaces left:</strong> <span class="spots">4</span></p>
+            </div>
+          </aside>
+        </div>
+      </article>
 
-<!-- third div -->
-    <div class="image1">
-       <div class="imgdiv"> <img src="bok choi.jfif">
-        <p>bok choi</p></div>
+      <!-- CARD 2: Sauces -->
+      <article class="course-card reveal" style="--delay: 0.15s">
+        <div class="card-image">
+          <img
+            src="teriyaki sauce.jpg"
+            alt="Teriyaki Sauce"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="img-fallback sauce-fallback">
+            <svg
+              viewBox="0 0 160 220"
+              xmlns="http://www.w3.org/2000/svg"
+              width="110"
+            >
+              <rect
+                x="52"
+                y="90"
+                width="56"
+                height="110"
+                rx="12"
+                fill="#3d1a00"
+                stroke="#5c2800"
+                stroke-width="2"
+              />
+              <rect
+                x="60"
+                y="70"
+                width="40"
+                height="30"
+                rx="8"
+                fill="#4a2200"
+                stroke="#5c2800"
+                stroke-width="1.5"
+              />
+              <rect
+                x="66"
+                y="55"
+                width="28"
+                height="20"
+                rx="5"
+                fill="#5c2800"
+              />
+              <rect
+                x="70"
+                y="45"
+                width="20"
+                height="14"
+                rx="4"
+                fill="#6b3300"
+              />
+              <rect
+                x="56"
+                y="110"
+                width="48"
+                height="60"
+                rx="6"
+                fill="#f5e6c8"
+                stroke="#d4b483"
+                stroke-width="1"
+              />
+              <text
+                x="80"
+                y="130"
+                text-anchor="middle"
+                font-size="8"
+                fill="#5c2800"
+                font-weight="bold"
+              >
+                TERIYAKI
+              </text>
+              <text
+                x="80"
+                y="142"
+                text-anchor="middle"
+                font-size="7"
+                fill="#9b4444"
+              >
+                SAUCE
+              </text>
+              <line
+                x1="60"
+                y1="148"
+                x2="100"
+                y2="148"
+                stroke="#d4b483"
+                stroke-width="0.8"
+              />
+              <text
+                x="80"
+                y="158"
+                text-anchor="middle"
+                font-size="6"
+                fill="#7a6040"
+              >
+                Yoko's Kitchen
+              </text>
+              <rect
+                x="58"
+                y="95"
+                width="6"
+                height="50"
+                rx="3"
+                fill="rgba(255,255,255,0.15)"
+              />
+              <path d="M80 45 Q83 38 80 32 Q77 38 80 45" fill="#3d1a00" />
+            </svg>
+            <span>Teriyaki Sauce</span>
+          </div>
+          <div class="card-tag">One Day</div>
+          <div class="card-price">£95</div>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-eyebrow">Masterclass</p>
+            <h2>Sauces Masterclass</h2>
+            <p class="card-subtitle">One day intensive workshop</p>
+            <p class="card-desc">
+              An intensive one-day course exploring how to create the most
+              delicious sauces for use in a range of Japanese cookery — from
+              teriyaki to ponzu and miso glazes.
+            </p>
+            <div class="card-tags">
+              <span>Teriyaki</span>
+              <span>Ponzu</span>
+              <span>Miso</span>
+              <span>All Levels</span>
+            </div>
+            <a href="#contact" class="card-btn">Book This Class</a>
+          </div>
+          <aside class="card-sidebar" id="contact">
+            <h3>Contact Us</h3>
+            <ul class="contact-list">
+              <li class="strong">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+                Yoko's Kitchen
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                27 Red Church Street, Shoreditch, London E2 7DP
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.8 19.79 19.79 0 0 1 1.59 5.2 2 2 0 0 1 3.56 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 18z"
+                  />
+                </svg>
+                020 7946 0321
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                hello@yokoskitchen.co.uk
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </article>
+    </main>
 
-        <div class="cont">
-        <h1>japanese vegetarian</h1>
-        <h2>five week course in london</h2>
-        <p>a five week introduction to traditional <br> japanese vegetarian meals, teaching you a <br> selection of rice and noodles dishes </p>
-    
-    </div>
+    <!-- ABOUT SECTION -->
+    <section class="about-strip" id="about">
+      <div class="about-inner">
+        <div class="about-text reveal">
+          <p class="eyebrow-red">Our Story</p>
+          <h2>Meet Yoko</h2>
+          <p>
+            Born in Kyoto and trained in Tokyo's finest kitchens, Yoko brings
+            over 20 years of authentic Japanese culinary expertise to the heart
+            of London. Her classes combine traditional techniques with warmth,
+            patience and a deep love for food.
+          </p>
+          <a href="#classes" class="outline-btn">View All Classes</a>
+        </div>
+        <div class="about-visual reveal">
+          <svg
+            viewBox="0 0 220 260"
+            xmlns="http://www.w3.org/2000/svg"
+            width="200"
+          >
+            <rect
+              x="60"
+              y="155"
+              width="100"
+              height="90"
+              rx="10"
+              fill="#f5e6c8"
+              stroke="#d4b483"
+              stroke-width="1.5"
+            />
+            <rect
+              x="85"
+              y="155"
+              width="50"
+              height="90"
+              fill="#fff"
+              stroke="#d4b483"
+              stroke-width="1"
+            />
+            <rect
+              x="65"
+              y="140"
+              width="90"
+              height="50"
+              rx="15"
+              fill="#9b4444"
+            />
+            <rect x="98" y="120" width="24" height="28" rx="8" fill="#f5d0b0" />
+            <ellipse cx="110" cy="100" rx="38" ry="40" fill="#f5d0b0" />
+            <ellipse cx="110" cy="72" rx="38" ry="18" fill="#2d1a00" />
+            <ellipse cx="76" cy="95" rx="10" ry="22" fill="#2d1a00" />
+            <ellipse cx="144" cy="95" rx="10" ry="22" fill="#2d1a00" />
+            <ellipse cx="110" cy="64" rx="18" ry="12" fill="#2d1a00" />
+            <circle cx="110" cy="56" r="8" fill="#2d1a00" />
+            <line
+              x1="102"
+              y1="56"
+              x2="118"
+              y2="56"
+              stroke="#c8a020"
+              stroke-width="2"
+            />
+            <circle cx="118" cy="56" r="3" fill="#c8a020" />
+            <ellipse cx="97" cy="102" rx="5" ry="4" fill="#2d1a00" />
+            <ellipse cx="123" cy="102" rx="5" ry="4" fill="#2d1a00" />
+            <circle cx="99" cy="100" r="1.5" fill="white" />
+            <circle cx="125" cy="100" r="1.5" fill="white" />
+            <path
+              d="M100 114 Q110 122 120 114"
+              stroke="#9b4444"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+            />
+            <rect
+              x="30"
+              y="140"
+              width="40"
+              height="18"
+              rx="9"
+              fill="#9b4444"
+              transform="rotate(20 30 140)"
+            />
+            <rect
+              x="148"
+              y="140"
+              width="40"
+              height="18"
+              rx="9"
+              fill="#9b4444"
+              transform="rotate(-20 148 140)"
+            />
+            <ellipse cx="58" cy="180" rx="22" ry="10" fill="#4a9b5c" />
+            <path d="M36 180 Q36 196 58 196 Q80 196 80 180" fill="#5aab6c" />
+          </svg>
+        </div>
+      </div>
+    </section>
 
-    <div class="pop">
-        <h1>popular recipes</h1>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+          >
+            <ellipse
+              cx="20"
+              cy="24"
+              rx="16"
+              ry="8"
+              fill="none"
+              stroke="#f5e6c8"
+              stroke-width="1.5"
+            />
+            <path
+              d="M4 24 Q4 36 20 36 Q36 36 36 24"
+              fill="rgba(245,230,200,0.08)"
+              stroke="#f5e6c8"
+              stroke-width="1.5"
+            />
+            <line
+              x1="15"
+              y1="5"
+              x2="18"
+              y2="17"
+              stroke="#f5e6c8"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="4"
+              x2="21"
+              y2="17"
+              stroke="#f5e6c8"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span>Yoko's Kitchen</span>
+        </div>
+        <p>
+          © 2025 Yoko's Kitchen · 27 Red Church Street, Shoreditch, London E2
+          7DP
+        </p>
+        <p class="footer-tagline">Bringing Japan to your table 🍜</p>
+      </div>
+    </footer>
 
-        <ul>
-            <li>yakitori ( grilled chicken )</li>
-            <li>tsukune ( minced chicken patties )</li>
-            <li>okonomiyaki ( savory pancakes )</li>
-            <li>mizutaki ( chicken stew )</li>
-        </ul>
-
-    </div>
-
-    </div>
-
-    <div class="image2">
-        <div class="imgdiv"><img src="teriyaki sauce.jpg">
-        <p>teriyaki sauce</p></div>
-
-        <div class="cont">
-        <h1>sauces masterclass</h1>
-        <h2>one day workshop</h2>
-        <p>an intensive one-day course looking at how <br> to create the most delicious sauces for use <br> in a range of japanese cookery</p>
-    
-    </div>
-
-    <div class="contact">
-        <h1>contact</h1>
-
-        <ul>
-            <li>yoko's kitchen</li>
-            <li>27 red church street</li>
-            <li>shoreditch</li>
-            <li>london e2 7 dp</li>
-        </ul>
-    </div>
-
-
-    </div>
-
-
-
-
-
-
- 
-    <!-- fourth div -->
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
